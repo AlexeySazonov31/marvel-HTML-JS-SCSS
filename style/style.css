@@ -1,3 +1,7 @@
+body {
+  font-family: "Regular";
+}
+
 header {
   height: 100vh;
   background-image: url("../image/header.jpg");
@@ -13,8 +17,8 @@ header .gradient {
   height: 100vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 15% 75% 10%;
-      grid-template-rows: 15% 75% 10%;
+  -ms-grid-rows: 27% 61% 12%;
+      grid-template-rows: 27% 61% 12%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -32,7 +36,7 @@ header .gradient .menu {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 3% 13%;
+  padding: 3% 8%;
 }
 
 header .gradient .menu .logo {
@@ -45,8 +49,8 @@ header .gradient .menu .logo {
 }
 
 header .gradient .menu .logo img {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
 }
 
 header .gradient .menu .logo h4 {
@@ -60,21 +64,29 @@ header .gradient .menu .logo h4 {
 header .gradient .menu .logo h5 {
   margin: 0;
   padding: 0;
-  font-weight: 400;
-  font-size: 10px;
+  font-weight: 500;
+  font-size: 11px;
 }
 
-header .gradient .menu .menuBt button {
-  color: black;
-  background-color: rgba(0, 0, 0, 0);
+header .gradient .menu .menuBt {
+  display: none;
+}
+
+header .gradient .menu .mobButtonMenu {
+  display: block;
+  margin-top: 0%;
   border: none;
-  font-size: large;
-  padding: 5px 0;
-  margin: 5px 10px;
+  background-color: rgba(255, 0, 0, 0);
+  padding: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
-header .gradient .menu .menuBt .active {
-  border-bottom: 2px solid #e5ff00;
+header .gradient .menu .mobButtonMenu hr {
+  width: 70px;
+  border: 2px solid black;
+  margin: 17px 0;
 }
 
 header .gradient .info {
@@ -85,30 +97,27 @@ header .gradient .info {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 
 header .gradient .info h1 {
   color: white;
   text-align: center;
-  font-family: 'Alata';
   font-style: normal;
   font-weight: 600;
-  font-size: 100px;
-  line-height: 130px;
+  font-size: 50px;
+  padding: 0 5%;
 }
 
 header .gradient .info h3 {
-  font-family: 'Sofia Pro';
   font-style: normal;
-  font-weight: 300;
-  font-size: 25px;
-  line-height: 35px;
+  font-weight: 400;
+  font-size: 18px;
   text-align: center;
-  color: #FFFFFF;
-  padding: 15px 20%;
+  color: #ebebeb;
+  padding: 5% 8%;
 }
 
 header .gradient .info button {
@@ -116,10 +125,10 @@ header .gradient .info button {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  width: 196px;
+  font-weight: 800;
+  width: 180px;
   height: 40px;
-  left: 721px;
-  top: 732px;
+  font-size: 13px;
   background: #F9D023;
   border: none;
 }
@@ -130,60 +139,121 @@ header .gradient .scroll a {
   display: flex;
   color: #e4e4e4;
   text-decoration: none;
-  font-size: large;
+  font-size: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
+@media (min-width: 700px) {
+  header .gradient {
+    -ms-grid-rows: 15% 75% 10%;
+        grid-template-rows: 15% 75% 10%;
+  }
+  header .gradient .menu {
+    padding: 3% 13%;
+  }
+  header .gradient .menu .logo img {
+    width: 50px;
+    height: 50px;
+  }
+  header .gradient .menu .logo h4 {
+    font-size: 26px;
+    margin-top: 8%;
+  }
+  header .gradient .menu .logo h5 {
+    font-size: 10px;
+  }
+  header .gradient .menu .menuBt {
+    display: block;
+  }
+  header .gradient .menu .menuBt button {
+    color: black;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    font-size: large;
+    font-weight: 600;
+    padding: 5px 0;
+    margin: 5px 10px;
+  }
+  header .gradient .menu .menuBt .active {
+    border-bottom: 2px solid #F9D023;
+  }
+  header .gradient .menu .mobButtonMenu {
+    display: none;
+  }
+  header .gradient .info {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .gradient .info h1 {
+    font-size: 75px;
+  }
+  header .gradient .info h3 {
+    font-size: 22px;
+    padding: 15px 20%;
+  }
+  header .gradient .info button {
+    margin-top: 70px;
+    width: 170px;
+    height: 38px;
+    font-size: 12px;
+  }
+  header .gradient .scroll a {
+    font-size: large;
+  }
+}
+
 main .box {
-  padding: 8% 15%;
-  padding-top: 5%;
+  padding: 15% 10%;
+  padding-top: 8%;
 }
 
 main .box h1 {
-  font-family: 'Alata';
   font-style: normal;
-  font-weight: 500;
-  font-size: 90px;
+  font-weight: 700;
+  font-size: 40px;
   line-height: 100px;
   padding: 0;
   margin: 0;
 }
 
 main .box hr {
-  margin: 5% 0;
-  width: 12%;
-  border: 2px solid #F6D330;
+  margin: 12% 0;
+  margin-top: 0;
+  width: 20%;
+  border: 3px solid #F6D330;
 }
 
 main .box .content {
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 45% 45%;
-      grid-template-columns: 45% 45%;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
 }
 
 main .box .content img {
-  width: 95%;
+  width: 90%;
 }
 
 main .box .content p {
-  margin: 0;
-  margin-left: 5%;
-  font-size: 18px;
+  margin: 8% 0;
+  margin-left: 2%;
+  font-weight: 400;
 }
 
 main .box .beautifulkart {
   font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 26px;
+  font-weight: 400;
+  font-size: 20px;
   margin-top: 50px;
+  padding-right: 10%;
+  line-height: 120%;
 }
 
 main .orange {
@@ -191,7 +261,7 @@ main .orange {
 }
 
 main .orange hr {
-  border: 2px solid white;
+  border: 3px solid white;
 }
 
 main .orange .karts {
@@ -199,21 +269,29 @@ main .orange .karts {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 main .orange .karts .kart {
   background-color: white;
   padding: 1% 3%;
-  padding-bottom: 3%;
+  padding-bottom: 10%;
+  margin: 5% 0;
+}
+
+main .orange .karts .kart img {
+  width: 90%;
+  margin: auto;
+  margin-left: 5%;
+  margin-bottom: 5%;
 }
 
 main .orange .karts .kart h3 {
-  font-family: 'Alata';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 30px;
   line-height: 41px;
   text-align: center;
@@ -228,7 +306,7 @@ main .orange .karts .kartText h2 {
   margin-left: -5%;
   padding-left: 0;
   color: black;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700;
 }
 
@@ -240,8 +318,8 @@ main .orange .karts .kartText ul {
 
 main .orange .karts .kartText ul li {
   color: white;
-  margin: 15px;
-  font-size: 18px;
+  margin: 15px 10px;
+  font-size: 20px;
   font-weight: 500;
 }
 
@@ -250,6 +328,8 @@ main .orange .karts .kartText ul li span {
 }
 
 main .orange .karts .kartText .lineB {
+  margin: 0;
+  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -261,11 +341,12 @@ main .orange .karts .kartText .lineB {
 }
 
 main .orange .karts .kartText .lineB hr {
-  margin-top: 10px;
+  margin-top: 12px;
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
       align-self: start;
   width: 18%;
+  border: 1px solid white;
 }
 
 main .orange .karts .kartText .lineB span {
@@ -279,13 +360,75 @@ main .orange .karts .kartText .lineB span {
   font-size: 20px;
 }
 
+@media (min-width: 1000px) {
+  main .box hr {
+    width: 12%;
+  }
+  main .box .content {
+    -ms-grid-columns: 40% 60%;
+        grid-template-columns: 40% 60%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  main .box .content .blockIMG {
+    width: 95%;
+    overflow: hidden;
+  }
+  main .box .content .blockIMG img {
+    min-height: 100%;
+    width: auto;
+  }
+  main .box .content p {
+    margin: 0;
+    margin-left: 3%;
+    font-size: 19px;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 700px) {
+  main .box {
+    padding: 5% 15%;
+    padding-top: 5%;
+  }
+  main .box hr {
+    margin-bottom: 5%;
+  }
+  main .box .beautifulkart {
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 50px;
+  }
+  main .content .blockIMG img {
+    width: 100%;
+  }
+  main .orange .karts {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main .orange .karts .kart {
+    padding: 1% 3%;
+    padding-bottom: 5%;
+    margin: 5% 2%;
+  }
+}
+
 footer {
-  padding: 20% 15%;
-  padding-top: 5%;
+  padding: 15% 10%;
+  /*
+        padding: 20% 15%;
+    padding-top: 5%;
+    */
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 45% 45%;
-      grid-template-columns: 45% 45%;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -294,11 +437,9 @@ footer {
 }
 
 footer h1 {
-  font-family: 'Alata';
   font-style: normal;
-  font-weight: 500;
-  font-size: 90px;
-  line-height: 100px;
+  font-weight: 700;
+  font-size: 40px;
   padding: 0;
   margin: 0;
 }
@@ -307,11 +448,11 @@ footer hr {
   width: 20%;
   margin-left: 0;
   border: 2px solid #F6D330;
-  margin: 40px 0;
+  margin: 60px 0;
 }
 
 footer h3 {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 footer h3 span {
@@ -321,7 +462,7 @@ footer h3 span {
 
 footer .cont h3 {
   margin-top: 10%;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 footer .cont form {
@@ -332,14 +473,15 @@ footer .cont form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 30px 0;
+  padding: 50px 0;
 }
 
 footer .cont form input {
   display: block;
   width: 100%;
   margin: 8px 0;
-  padding: 15px;
+  padding: 15px 25px;
+  font-size: 15px;
 }
 
 footer .cont form input::-webkit-input-placeholder {
@@ -353,9 +495,10 @@ footer .cont form input:-moz-placeholder {
 }
 
 footer .cont form button {
-  margin: 8px 0;
-  padding: 15px;
-  width: 70%;
+  font-size: 18px;
+  margin: 15px 0;
+  padding: 8px 25px;
+  width: 200px;
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
@@ -363,8 +506,38 @@ footer .cont form button {
   font-weight: 800;
 }
 
+@media (min-width: 700px) {
+  footer {
+    padding: 5% 15%;
+    -ms-grid-columns: 45% 45%;
+        grid-template-columns: 45% 45%;
+  }
+  footer h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+  }
+  footer hr {
+    margin: 40px 0;
+  }
+  footer h3 {
+    font-size: 20px;
+  }
+  footer .cont h3 {
+    margin-top: 10%;
+    font-size: 24px;
+  }
+  footer .cont form button {
+    font-size: 15px;
+    height: 50px;
+  }
+  footer .cont form button .icBt {
+    width: 24px;
+  }
+}
+
 .icBt {
   width: 20px;
-  margin-left: 5px;
+  margin-left: 18px;
 }
 /*# sourceMappingURL=style.css.map */
