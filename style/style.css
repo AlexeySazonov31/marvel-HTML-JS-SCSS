@@ -32,7 +32,7 @@ header .gradient .menu {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 3% 15%;
+  padding: 3% 13%;
 }
 
 header .gradient .menu .logo {
@@ -144,7 +144,7 @@ main .box {
 main .box h1 {
   font-family: 'Alata';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 90px;
   line-height: 100px;
   padding: 0;
@@ -179,8 +179,11 @@ main .box .content p {
 }
 
 main .box .beautifulkart {
-  padding-right: 25%;
-  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 50px;
 }
 
 main .orange {
@@ -214,5 +217,154 @@ main .orange .karts .kart h3 {
   font-size: 30px;
   line-height: 41px;
   text-align: center;
+}
+
+main .orange .karts .kartText {
+  width: 100%;
+  padding: 1% 3%;
+}
+
+main .orange .karts .kartText h2 {
+  margin-left: -5%;
+  padding-left: 0;
+  color: black;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+main .orange .karts .kartText ul {
+  margin-top: 40px;
+  list-style-type: disc;
+  color: white;
+}
+
+main .orange .karts .kartText ul li {
+  color: white;
+  margin: 15px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+main .orange .karts .kartText ul li span {
+  color: black;
+}
+
+main .orange .karts .kartText .lineB {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-line-pack: start;
+      align-content: start;
+}
+
+main .orange .karts .kartText .lineB hr {
+  margin-top: 10px;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  width: 18%;
+}
+
+main .orange .karts .kartText .lineB span {
+  margin-top: 0;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  margin-left: 1%;
+  color: white;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+footer {
+  padding: 20% 15%;
+  padding-top: 5%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 45% 45%;
+      grid-template-columns: 45% 45%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: black;
+  color: white;
+}
+
+footer h1 {
+  font-family: 'Alata';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 90px;
+  line-height: 100px;
+  padding: 0;
+  margin: 0;
+}
+
+footer hr {
+  width: 20%;
+  margin-left: 0;
+  border: 2px solid #F6D330;
+  margin: 40px 0;
+}
+
+footer h3 {
+  font-size: 30px;
+}
+
+footer h3 span {
+  text-decoration: underline;
+  color: #F6D330;
+}
+
+footer .cont h3 {
+  margin-top: 10%;
+  font-size: 30px;
+}
+
+footer .cont form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px 0;
+}
+
+footer .cont form input {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  padding: 15px;
+}
+
+footer .cont form input::-webkit-input-placeholder {
+  color: #000000;
+  font-weight: 600;
+}
+
+footer .cont form input:-moz-placeholder {
+  color: #000000;
+  font-weight: 600;
+}
+
+footer .cont form button {
+  margin: 8px 0;
+  padding: 15px;
+  width: 70%;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  background-color: #F6D330;
+  font-weight: 800;
+}
+
+.icBt {
+  width: 20px;
+  margin-left: 5px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -6,6 +6,17 @@
     <title>Marvel</title>
     <link rel="stylesheet" href="./style/reset.css" />
     <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/slider.css" />
+    
+
+    <!-- ChiefSlider CSS -->
+    <link rel="stylesheet" href="./ui-components-master/slider.css" />
+    <!-- ChiefSlider JavaScript -->
+    <script
+      defer
+      src="./ui-components-master/slider.js"
+    ></script>
+
   </head>
   <html>
     <body>
@@ -13,7 +24,7 @@
         <div class="gradient">
           <div class="menu">
             <div class="logo">
-              <img src="./image/icon.png" alt="iconLOGO"/>
+              <img src="./image/icon.png" alt="iconLOGO" />
               <div>
                 <h4>Marvel</h4>
                 <h5>POWER GROUP</h5>
@@ -26,16 +37,14 @@
             </div>
           </div>
           <div class="info">
-              <h1>Marvel Power Group</h1>
-              <h3>Marvel Power Group is a boutique consulting firm with a fresh, 
-                markets-based approach to value creation. 
-                We offer services to clients in energy, water, 
-                manufacturing and transportation sectors.
-              </h3>
-              <button>
-                CONTACT US
-              </button>
-  
+            <h1>Marvel Power Group</h1>
+            <h3>
+              Marvel Power Group is a boutique consulting firm with a fresh,
+              markets-based approach to value creation. We offer services to
+              clients in energy, water, manufacturing and transportation
+              sectors.
+            </h3>
+            <button>CONTACT US<img class="icBt" src="./image/icBt.png"></button>
           </div>
           <div class="scroll">
             <a href="#">Scroll for more</a>
@@ -45,58 +54,179 @@
       <main>
         <div class="box">
           <h1>About Us</h1>
-          <hr>
+          <hr />
           <div class="content">
-            <img src="./image/box_1.jpg" alt="city">
-              <p>
-                Our dynamic, solutions-oriented team brings decades 
-                of relevant transactional, analytical and regulatory 
-                experience to supporting our clients’ unique agendas.<br><br>
-                We are experienced practitioners who have run companies, 
-                successfully originated and closed complex deals, 
-                advocated and negotiated favorable policy and advanced 
-                technological innovation and climate leadership.<br><br>
-                We specialize in structuring balanced solutions for 
-                all affected stakeholders and uncovering economic 
-                opportunities in otherwise opaque environments.
-              </p>
+            <img src="./image/box_1.jpg" alt="city" />
+            <p>
+              Our dynamic, solutions-oriented team brings decades of relevant
+              transactional, analytical and regulatory experience to supporting
+              our clients’ unique agendas.<br /><br />
+              We are experienced practitioners who have run companies,
+              successfully originated and closed complex deals, advocated and
+              negotiated favorable policy and advanced technological innovation
+              and climate leadership.<br /><br />
+              We specialize in structuring balanced solutions for all affected
+              stakeholders and uncovering economic opportunities in otherwise
+              opaque environments.
+            </p>
           </div>
         </div>
         <div class="box orange">
           <h1>Our things</h1>
-          <hr>
+          <hr />
           <div class="karts">
             <div class="kart">
-              <img src="./image/kart1.png" alt="kart1">
+              <img src="./image/kart1.png" alt="kart1" />
               <h3>Roller things</h3>
             </div>
             <div class="kart">
-              <img src="./image/kart2.png" alt="kart2">
+              <img src="./image/kart2.png" alt="kart2" />
               <h3>Pipe things</h3>
             </div>
             <div class="kart">
-              <img src="./image/kart3.png" alt="kart3">
+              <img src="./image/kart3.png" alt="kart3" />
               <h3>Cube things</h3>
             </div>
           </div>
         </div>
         <div class="box">
           <h1>Beautiful</h1>
-          <hr>
-          <div>
-            
+          <hr />
+          <!------------------------------------------------------------------------->
+
+
+          <div class="container">
+
+            <div class="slider">
+              <div class="slider__container">
+                <div class="slider__wrapper">
+                  <div class="slider__items">
+                    <div class="slider__item">
+                      <img src="./image/slider/Rectangle 1453.jpg" alt="img1">
+                    </div>
+                    <div class="slider__item">
+                      <img src="./image/slider/Rectangle 1454.jpg" alt="img2">
+                    </div>
+                    <div class="slider__item">
+                      <img src="./image/slider/Rectangle 1455.jpg" alt="img3">
+                    </div>
+                    <div class="slider__item">
+                      <img src="./image/slider/Rectangle 1456.jpg" alt="img4">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="slider__control" data-slide="prev"></a>
+              <a href="#" class="slider__control" data-slide="next"></a>
+            </div>
+        
           </div>
+          <!------------------------------------------------------------------------------>
+            
+          <p class="beautifulkart">
+            Our clients are time constrained and under-resourced. Agendas shift,
+            budgets move and priorities change. We understand. We are agile,
+            creative and immediately responsive to your various working styles,
+            governance requirements and evolving needs.
+          </p>
+        </div>
+        <div class="box orange">
+          <h1>Services</h1>
+          <hr />
+          <p class="beautifulkart">Our clients are at the forefront of energy transition
+            and innovation. Their task is complex: balance
+            reliability and cost effectiveness with new customer
+            demands, investment decisions, decarbonization goals
+            and an evolving menu of new technologies. 
+            We understand the task and bring deep expertise 
+            to addressing these challenges.
+          </p>
+          <br>
+          <br>
+          <div class="karts">
+            <div class="kartText">
+              <h2>
+                Enterprise Strategy
+              </h2>
+              <ul>
+                <li><span>Procurement and investment diligence</span></li>
+                <li><span>Customer engagement and retention</span></li>
+                <li><span>Renewable, DER, and EV program structuring</span></li>
+                <li><span>Reliability planning and reporting</span></li>
+              </ul>
+              <div class="lineB">
+                <hr>
+                <span>&gt;</span>
+              </div>
+            </div>
+            <div class="kartText">
+              <h2>
+                Wholesale Power 
+              </h2>
+              <ul>
+                <li><span>Commodity advisory and RFPs</span></li>
+                <li><span>Energy, capacity, REC, RIN, and LCFS placement</span></li>
+                <li><span>Enterprise PPA structuring</span></li>
+                <li><span>Contract extensions and re-packaging</span></li>
+              </ul>
+              <div class="lineB">
+                <hr>
+                <span>&gt;</span>
+              </div>            </div>
+            <div class="kartText">
+              <h2>
+                Market Development
+              </h2>
+              <ul>
+                <li><span>New venture setup</span></li>
+                <li><span>Demand planning and acquisition</span></li>
+                <li><span>Project development and regulatory support</span></li>
+                <li><span>Partnership structuring</span></li>
+              </ul>
+              <div class="lineB">
+                <hr>
+                <span>&gt;</span>
+              </div>      
+             </div>
+
+          </div>  
           <p class="beautifulkart">
             Our clients are time constrained and under-resourced. 
             Agendas shift, budgets move and priorities change. 
             We understand. We are agile, creative and immediately 
-            responsive to your various working styles, governance 
-            requirements and evolving needs. 
+            responsive to your various working styles, 
+            governance requirements and evolving needs. 
           </p>
         </div>
 
-
       </main>
+      <footer>
+        <div>
+          <h1>Contact</h1>
+          <hr>
+          <h3>Email us here:<br> <span>info@marvelpowergroup.com</span></h3>
+        </div>
+        <inp class="cont">
+          <h3>Stay in the loop <br>
+            by getting on <br>
+            our mailing list<br>
+          </h3>
+          <form>
+            <input type="text" placeholder="NAME *">
+            <input type="email" placeholder="E-MAIL *">
+            <button>SEND<img class="icBt" src="./image/icBt.png"></button>
+          </form>
+        </div>
+      </footer>
+
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const slider = new ChiefSlider('.slider', {
+            loop: true
+          });
+        });
+      </script>
     </body>
   </html>
 </html>
