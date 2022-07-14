@@ -1,5 +1,6 @@
 body {
   font-family: "Regular";
+  scroll-behavior: smooth;
 }
 
 header {
@@ -87,6 +88,15 @@ header .gradient .menu .mobButtonMenu hr {
   width: 70px;
   border: 2px solid black;
   margin: 17px 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+header .gradient .menu .mobButtonMenu:hover hr, header .gradient .menu .mobButtonMenu:focus hr {
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 header .gradient .info {
@@ -120,17 +130,32 @@ header .gradient .info h3 {
   padding: 5% 8%;
 }
 
-header .gradient .info button {
-  margin-top: 20px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  font-weight: 800;
-  width: 180px;
-  height: 40px;
-  font-size: 13px;
-  background: #F9D023;
-  border: none;
+header .gradient .info a {
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+  height: 45px;
+  background-color: #F6D330;
+  padding: 16px 40px;
+  font-weight: 700;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+header .gradient .info a img {
+  width: 17px;
+  margin-bottom: 1px;
+  margin-left: 13px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+header .gradient .info a:hover img, header .gradient .info a:focus img {
+  margin-left: 20px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 header .gradient .scroll a {
@@ -143,12 +168,20 @@ header .gradient .scroll a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+header .gradient .scroll a:hover, header .gradient .scroll a:focus {
+  color: #b6b6b6;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 @media (min-width: 700px) {
   header .gradient {
-    -ms-grid-rows: 15% 75% 10%;
-        grid-template-rows: 15% 75% 10%;
+    -ms-grid-rows: 15% 75% 15%;
+        grid-template-rows: 15% 75% 15%;
   }
   header .gradient .menu {
     padding: 3% 13%;
@@ -165,9 +198,11 @@ header .gradient .scroll a {
     font-size: 10px;
   }
   header .gradient .menu .menuBt {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
-  header .gradient .menu .menuBt button {
+  header .gradient .menu .menuBt a {
     color: black;
     background-color: rgba(0, 0, 0, 0);
     border: none;
@@ -175,9 +210,15 @@ header .gradient .scroll a {
     font-weight: 600;
     padding: 5px 0;
     margin: 5px 10px;
+    text-decoration: none;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
   }
-  header .gradient .menu .menuBt .active {
-    border-bottom: 2px solid #F9D023;
+  header .gradient .menu .menuBt a:hover, header .gradient .menu .menuBt a:focus {
+    color: #F6D330;
+    border: none;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
   }
   header .gradient .menu .mobButtonMenu {
     display: none;
@@ -188,17 +229,12 @@ header .gradient .scroll a {
             justify-content: center;
   }
   header .gradient .info h1 {
+    margin-top: 10%;
     font-size: 75px;
   }
   header .gradient .info h3 {
     font-size: 22px;
     padding: 15px 20%;
-  }
-  header .gradient .info button {
-    margin-top: 70px;
-    width: 170px;
-    height: 38px;
-    font-size: 12px;
   }
   header .gradient .scroll a {
     font-size: large;
@@ -482,6 +518,7 @@ footer .cont form input {
   margin: 8px 0;
   padding: 15px 25px;
   font-size: 15px;
+  font-weight: 600;
 }
 
 footer .cont form input::-webkit-input-placeholder {
@@ -503,7 +540,20 @@ footer .cont form button {
       -ms-grid-row-align: end;
       align-self: end;
   background-color: #F6D330;
-  font-weight: 800;
+  font-weight: 600;
+}
+
+footer .cont form button img {
+  margin-bottom: 1px;
+  margin-left: 13px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+footer .cont form button:hover img, footer .cont form button:focus img {
+  margin-left: 20px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 @media (min-width: 700px) {
@@ -531,13 +581,177 @@ footer .cont form button {
     font-size: 15px;
     height: 50px;
   }
-  footer .cont form button .icBt {
-    width: 24px;
-  }
 }
 
 .icBt {
   width: 20px;
   margin-left: 18px;
+}
+
+.menuMobile {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: white;
+  z-index: 100;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: display 0.3s;
+  transition: display 0.3s;
+}
+
+.menuMobile .headerMenuMobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: black;
+  padding: 20px 10px;
+  margin-bottom: 50px;
+}
+
+.menuMobile .headerMenuMobile .logoMobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-left: 5%;
+}
+
+.menuMobile .headerMenuMobile .logoMobile img {
+  width: 48px;
+  height: 48px;
+}
+
+.menuMobile .headerMenuMobile .logoMobile h4 {
+  font-size: 23px;
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+  margin-top: 8%;
+  color: white;
+}
+
+.menuMobile .headerMenuMobile .logoMobile h5 {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 9px;
+  color: white;
+}
+
+.menuMobile .headerMenuMobile .menuBtClose {
+  margin-right: 5%;
+  width: 40px;
+  background-color: rgba(100, 48, 48, 0);
+  border: none;
+}
+
+.menuMobile .headerMenuMobile .menuBtClose hr {
+  margin: -4px;
+  border: 2px solid white;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.menuMobile .headerMenuMobile .menuBtClose hr[id="left"] {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.menuMobile .headerMenuMobile .menuBtClose:hover hr, .menuMobile .headerMenuMobile .menuBtClose:hover:focus hr {
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.menuMobile .headerMenuMobile .menuBtClose:hover hr[id="left"], .menuMobile .headerMenuMobile .menuBtClose:hover:focus hr[id="left"] {
+  -webkit-transform: rotate(-55deg);
+          transform: rotate(-55deg);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.menuMobile .mainMenuMobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: end;
+  margin-bottom: 50px;
+}
+
+.menuMobile .mainMenuMobile a {
+  display: block;
+  text-decoration: none;
+  font-size: 35px;
+  height: 80px;
+  margin: 10px auto;
+  color: black;
+  font-weight: 600;
+  padding-bottom: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.menuMobile .mainMenuMobile a:hover, .menuMobile .mainMenuMobile a:focus {
+  color: #F6D330;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.menuMobile .footherMenuMobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menuMobile .footherMenuMobile a {
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+  height: 45px;
+  background-color: #F6D330;
+  padding: 16px 40px;
+  font-weight: 700;
+}
+
+.menuMobile .footherMenuMobile a img {
+  width: 17px;
+  margin-bottom: 1px;
+  margin-left: 8px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.menuMobile .footherMenuMobile a:hover img, .menuMobile .footherMenuMobile a:focus img {
+  margin-left: 13px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: display 0.3s;
+  transition: display 0.3s;
 }
 /*# sourceMappingURL=style.css.map */

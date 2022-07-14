@@ -32,11 +32,11 @@
               </div>
             </div>
             <div class="menuBt">
-              <button>About</button>
-              <button class="active">Services</button>
-              <button>Contact</button>
+              <a href="#main">About</a>
+              <a href="#services">Services</a>
+              <a href="#contact">Contact</a>
             </div>
-            <button class="mobButtonMenu">
+            <button class="mobButtonMenu" id="menuOpen">
               <hr>
               <hr>
             </button>
@@ -49,15 +49,15 @@
               clients in energy, water, manufacturing and transportation
               sectors.
             </h3>
-            <button>CONTACT US<img class="icBt" src="./image/icBt.png"></button>
+            <a href="#contact">CONTACT US<img class="icBt" src="./image/icBt.png"></a>
           </div>
           <div class="scroll">
-            <a href="#">Scroll for more</a>
+            <a href="#main">Scroll for more</a>
           </div>
         </div>
       </header>
       <main>
-        <div class="box">
+        <div class="box" id="main">
           <h1>About Us</h1>
           <hr />
           <div class="content">
@@ -137,7 +137,7 @@
             governance requirements and evolving needs.
           </p>
         </div>
-        <div class="box orange">
+        <div class="box orange" id="services">
           <h1>Services</h1>
           <hr />
           <p class="beautifulkart">Our clients are at the forefront of energy transition
@@ -207,7 +207,7 @@
         </div>
 
       </main>
-      <footer>
+      <footer id="contact">
         <div>
           <h1>Contact</h1>
           <hr>
@@ -218,13 +218,40 @@
             by getting on <br>
             our mailing list<br>
           </h3>
-          <form>
-            <input type="text" placeholder="NAME *">
-            <input type="email" placeholder="E-MAIL *">
+          <form action="/send.php" method="POST">
+            <input type="text" placeholder="NAME *" name="name">
+            <input type="email" placeholder="E-MAIL *" name="email">
             <button>SEND<img class="icBt" src="./image/icBt.png"></button>
           </form>
         </div>
       </footer>
+
+      <div class="menuMobile" id="menu">
+        <div class="headerMenuMobile">
+          <div class="logoMobile">
+            <img src="./image/iconL.png" alt="iconLOGO" />
+            <div>
+              <h4>Marvel</h4>
+              <h5>POWER GROUP</h5>
+            </div>
+          </div>
+          <button class="menuBtClose" id="menuClose">
+            <hr>
+            <hr id="left">
+          </button>
+        </div>
+        <div class="mainMenuMobile">
+          <a id="btMenuMob" href="#main">About</a>
+          <a id="btMenuMob" href="#services">Services</a>
+          <a id="btMenuMob" href="#contact">Contact</a>
+        </div>
+        <div class="footherMenuMobile">
+          <a href="#contact" id="mobContact">
+            CONTACT US<img class="icBt" src="./image/icBt.png">
+          </a>
+          
+        </div>
+      </div>
 
 
       <script>
@@ -234,6 +261,9 @@
           });
         });
       </script>
+
+    <script src="./index.js"></script>
+
     </body>
   </html>
 </html>
