@@ -221,7 +221,6 @@ header .gradient .scroll a:focus {
   header .gradient .menu .menuBt a:focus {
     color: #F6D330;
     border: none;
-    border-bottom: 2px solid #F6D330;
     -webkit-transition: all 0.1s;
     transition: all 0.1s;
   }
