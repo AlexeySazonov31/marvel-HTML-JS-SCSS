@@ -19,12 +19,12 @@ header .gradient {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 27% 61% 12%;
-      grid-template-rows: 27% 61% 12%;
+  grid-template-rows: 27% 61% 12%;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-line-pack: distribute;
-      align-content: space-around;
+  align-content: space-around;
   background: black;
   background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(80%, rgba(0, 212, 255, 0)));
   background: linear-gradient(0deg, black 0%, rgba(0, 212, 255, 0) 80%);
@@ -35,8 +35,8 @@ header .gradient .menu {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 3% 8%;
 }
 
@@ -45,8 +45,8 @@ header .gradient .menu .logo {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 header .gradient .menu .logo img {
@@ -92,9 +92,10 @@ header .gradient .menu .mobButtonMenu hr {
   transition: all 0.2s;
 }
 
-header .gradient .menu .mobButtonMenu:hover hr, header .gradient .menu .mobButtonMenu:focus hr {
+header .gradient .menu .mobButtonMenu:hover hr,
+header .gradient .menu .mobButtonMenu:focus hr {
   -webkit-transform: rotate(5deg);
-          transform: rotate(5deg);
+  transform: rotate(5deg);
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
@@ -105,11 +106,11 @@ header .gradient .info {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -ms-flex-pack: start;
+  justify-content: start;
 }
 
 header .gradient .info h1 {
@@ -152,7 +153,8 @@ header .gradient .info a img {
   transition: all 0.2s;
 }
 
-header .gradient .info a:hover img, header .gradient .info a:focus img {
+header .gradient .info a:hover img,
+header .gradient .info a:focus img {
   margin-left: 20px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -166,13 +168,14 @@ header .gradient .scroll a {
   text-decoration: none;
   font-size: 20px;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
-header .gradient .scroll a:hover, header .gradient .scroll a:focus {
+header .gradient .scroll a:hover,
+header .gradient .scroll a:focus {
   color: #b6b6b6;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -181,27 +184,33 @@ header .gradient .scroll a:hover, header .gradient .scroll a:focus {
 @media (min-width: 700px) {
   header .gradient {
     -ms-grid-rows: 15% 75% 15%;
-        grid-template-rows: 15% 75% 15%;
+    grid-template-rows: 15% 75% 15%;
   }
+
   header .gradient .menu {
     padding: 3% 13%;
   }
+
   header .gradient .menu .logo img {
     width: 50px;
     height: 50px;
   }
+
   header .gradient .menu .logo h4 {
     font-size: 26px;
     margin-top: 8%;
   }
+
   header .gradient .menu .logo h5 {
     font-size: 10px;
   }
+
   header .gradient .menu .menuBt {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
+
   header .gradient .menu .menuBt a {
     color: black;
     background-color: rgba(0, 0, 0, 0);
@@ -214,28 +223,35 @@ header .gradient .scroll a:hover, header .gradient .scroll a:focus {
     -webkit-transition: all 0.1s;
     transition: all 0.1s;
   }
-  header .gradient .menu .menuBt a:hover, header .gradient .menu .menuBt a:focus {
+
+  header .gradient .menu .menuBt a:hover,
+  header .gradient .menu .menuBt a:focus {
     color: #F6D330;
     border: none;
     -webkit-transition: all 0.1s;
     transition: all 0.1s;
   }
+
   header .gradient .menu .mobButtonMenu {
     display: none;
   }
+
   header .gradient .info {
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
+
   header .gradient .info h1 {
     margin-top: 10%;
     font-size: 75px;
   }
+
   header .gradient .info h3 {
     font-size: 22px;
     padding: 15px 20%;
   }
+
   header .gradient .scroll a {
     font-size: large;
   }
@@ -267,10 +283,10 @@ main .box .content {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 100%;
-      grid-template-columns: 100%;
+  grid-template-columns: 100%;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -ms-flex-pack: start;
+  justify-content: start;
 }
 
 main .box .content img {
@@ -307,8 +323,8 @@ main .orange .karts {
   width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 main .orange .karts .kart {
@@ -370,17 +386,17 @@ main .orange .karts .kartText .lineB {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -ms-flex-pack: start;
+  justify-content: start;
   -ms-flex-line-pack: start;
-      align-content: start;
+  align-content: start;
 }
 
 main .orange .karts .kartText .lineB hr {
   margin-top: 12px;
   -ms-flex-item-align: start;
-      -ms-grid-row-align: start;
-      align-self: start;
+  -ms-grid-row-align: start;
+  align-self: start;
   width: 18%;
   border: 1px solid white;
 }
@@ -388,8 +404,8 @@ main .orange .karts .kartText .lineB hr {
 main .orange .karts .kartText .lineB span {
   margin-top: 0;
   -ms-flex-item-align: start;
-      -ms-grid-row-align: start;
-      align-self: start;
+  -ms-grid-row-align: start;
+  align-self: start;
   margin-left: 1%;
   color: white;
   font-weight: 900;
@@ -400,21 +416,25 @@ main .orange .karts .kartText .lineB span {
   main .box hr {
     width: 12%;
   }
+
   main .box .content {
     -ms-grid-columns: 40% 60%;
-        grid-template-columns: 40% 60%;
+    grid-template-columns: 40% 60%;
     -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
+    -ms-flex-pack: start;
+    justify-content: start;
   }
+
   main .box .content .blockIMG {
     width: 95%;
     overflow: hidden;
   }
+
   main .box .content .blockIMG img {
     min-height: 100%;
     width: auto;
   }
+
   main .box .content p {
     margin: 0;
     margin-left: 3%;
@@ -428,26 +448,31 @@ main .orange .karts .kartText .lineB span {
     padding: 5% 15%;
     padding-top: 5%;
   }
+
   main .box hr {
     margin-bottom: 5%;
   }
+
   main .box .beautifulkart {
     font-weight: 600;
     font-size: 20px;
     margin-top: 50px;
   }
+
   main .content .blockIMG img {
     width: 100%;
   }
+
   main .orange .karts {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
+
   main .orange .karts .kart {
     padding: 1% 3%;
     padding-bottom: 5%;
@@ -464,10 +489,10 @@ footer {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 100%;
-      grid-template-columns: 100%;
+  grid-template-columns: 100%;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   background-color: black;
   color: white;
 }
@@ -507,8 +532,8 @@ footer .cont form {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding: 50px 0;
 }
 
@@ -537,8 +562,8 @@ footer .cont form button {
   padding: 8px 25px;
   width: 200px;
   -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
+  -ms-grid-row-align: end;
+  align-self: end;
   background-color: #F6D330;
   font-weight: 600;
 }
@@ -550,7 +575,8 @@ footer .cont form button img {
   transition: all 0.2s;
 }
 
-footer .cont form button:hover img, footer .cont form button:focus img {
+footer .cont form button:hover img,
+footer .cont form button:focus img {
   margin-left: 20px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -560,23 +586,28 @@ footer .cont form button:hover img, footer .cont form button:focus img {
   footer {
     padding: 5% 15%;
     -ms-grid-columns: 45% 45%;
-        grid-template-columns: 45% 45%;
+    grid-template-columns: 45% 45%;
   }
+
   footer h1 {
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
   }
+
   footer hr {
     margin: 40px 0;
   }
+
   footer h3 {
     font-size: 20px;
   }
+
   footer .cont h3 {
     margin-top: 10%;
     font-size: 24px;
   }
+
   footer .cont form button {
     font-size: 15px;
     height: 50px;
@@ -599,8 +630,8 @@ footer .cont form button:hover img, footer .cont form button:focus img {
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-transition: display 0.3s;
   transition: display 0.3s;
 }
@@ -610,10 +641,10 @@ footer .cont form button:hover img, footer .cont form button:focus img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   background-color: black;
   padding: 20px 10px;
   margin-bottom: 50px;
@@ -624,7 +655,7 @@ footer .cont form button:hover img, footer .cont form button:focus img {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-item-align: center;
-      align-self: center;
+  align-self: center;
   margin-left: 5%;
 }
 
@@ -661,24 +692,26 @@ footer .cont form button:hover img, footer .cont form button:focus img {
   margin: -4px;
   border: 2px solid white;
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .menuMobile .headerMenuMobile .menuBtClose hr[id="left"] {
   -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
-.menuMobile .headerMenuMobile .menuBtClose:hover hr, .menuMobile .headerMenuMobile .menuBtClose:hover:focus hr {
+.menuMobile .headerMenuMobile .menuBtClose:hover hr,
+.menuMobile .headerMenuMobile .menuBtClose:hover:focus hr {
   -webkit-transform: rotate(35deg);
-          transform: rotate(35deg);
+  transform: rotate(35deg);
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
-.menuMobile .headerMenuMobile .menuBtClose:hover hr[id="left"], .menuMobile .headerMenuMobile .menuBtClose:hover:focus hr[id="left"] {
+.menuMobile .headerMenuMobile .menuBtClose:hover hr[id="left"],
+.menuMobile .headerMenuMobile .menuBtClose:hover:focus hr[id="left"] {
   -webkit-transform: rotate(-55deg);
-          transform: rotate(-55deg);
+  transform: rotate(-55deg);
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
@@ -689,8 +722,8 @@ footer .cont form button:hover img, footer .cont form button:focus img {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   justify-items: end;
   margin-bottom: 50px;
 }
@@ -708,7 +741,8 @@ footer .cont form button:hover img, footer .cont form button:focus img {
   transition: all 0.2s;
 }
 
-.menuMobile .mainMenuMobile a:hover, .menuMobile .mainMenuMobile a:focus {
+.menuMobile .mainMenuMobile a:hover,
+.menuMobile .mainMenuMobile a:focus {
   color: #F6D330;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -719,8 +753,8 @@ footer .cont form button:hover img, footer .cont form button:focus img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .menuMobile .footherMenuMobile a {
@@ -741,7 +775,8 @@ footer .cont form button:hover img, footer .cont form button:focus img {
   transition: all 0.2s;
 }
 
-.menuMobile .footherMenuMobile a:hover img, .menuMobile .footherMenuMobile a:focus img {
+.menuMobile .footherMenuMobile a:hover img,
+.menuMobile .footherMenuMobile a:focus img {
   margin-left: 13px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -754,4 +789,5 @@ footer .cont form button:hover img, footer .cont form button:focus img {
   -webkit-transition: display 0.3s;
   transition: display 0.3s;
 }
+
 /*# sourceMappingURL=style.css.map */
